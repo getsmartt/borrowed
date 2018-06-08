@@ -1,0 +1,23 @@
+{
+  "name": "borrowed",
+  "version": "1.0.0",
+  "description": "Who borrowed my ? Skill for Alexa",
+  "main": "index.js",
+  "dependencies": {
+    "ask-sdk": "^2.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getsmartt/borrowed.git"
+  },
+  "author": "James Smartt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/getsmartt/borrowed/issues"
+  },
+  "homepage": "https://github.com/getsmartt/borrowed#readme"
+}
