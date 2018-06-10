@@ -1,0 +1,121 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "borrowed by",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "borrowed",
+                    "slots": [
+                        {
+                            "name": "Name",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        },
+                        {
+                            "name": "Item",
+                            "type": "item"
+                        },
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "On {date} {Name} borrowed {Item}",
+                        "{Name} borrowed my {Item} on {date}",
+                        "{Name} borrowed my {Item}"
+                    ]
+                },
+                {
+                    "name": "returned",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        },
+                        {
+                            "name": "item",
+                            "type": "item"
+                        },
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "{name} returned my {item} on {date}",
+                        "{name} returned my {item}",
+                        "{name} returned {item}"
+                    ]
+                },
+                {
+                    "name": "whoBorrowed",
+                    "slots": [
+                        {
+                            "name": "item",
+                            "type": "item"
+                        }
+                    ],
+                    "samples": [
+                        "Who borrowed {item}",
+                        "who borrowed my {item}"
+                    ]
+                },
+                {
+                    "name": "whenborrowed",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        },
+                        {
+                            "name": "item",
+                            "type": "item"
+                        }
+                    ],
+                    "samples": [
+                        "when did {name} borrow {item}",
+                        "when did {name} borrow my {item}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "item",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "electric drill"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "laptop"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "car"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
